@@ -7,7 +7,6 @@ import './navbar.css';
 import Footer from './footer/Footer';
 import testImg from './img/logo192.png';
 import MainNavBar from './MainNavBar/MainNavBar';
-import MainNavBar2 from './main-nav/MainNavBar';
 
 function App() {
   return (
@@ -68,7 +67,6 @@ function App() {
       </Container>
       <Footer />
       <MainNavBar />
-      <MainNavBar2 />
 
     </div>
   );
