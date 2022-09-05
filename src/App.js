@@ -1,8 +1,13 @@
+import React from 'react';
 import { Accordion, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
-import './App.css';
+import './App.scss';
+import './navbar.css';
+
 import Footer from './footer/Footer';
 import testImg from './img/logo192.png';
+import MainNavBar from './MainNavBar/MainNavBar';
+import MainNavBar2 from './main-nav/MainNavBar';
 
 function App() {
   return (
@@ -59,9 +64,12 @@ function App() {
           </Accordion.Item>
         </Accordion>
         <img src={testImg} alt="logo" />
-        <img src="https://i.pinimg.com/originals/7a/79/dc/7a79dc469fcc9bb2aee3276280ba24cc.jpg" alt="natural_bg" />
+        <img width="100%" src="https://i.pinimg.com/originals/7a/79/dc/7a79dc469fcc9bb2aee3276280ba24cc.jpg" alt="natural_bg" />
       </Container>
       <Footer />
+      <MainNavBar />
+      <MainNavBar2 />
+
     </div>
   );
 }
