@@ -1,0 +1,28 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+// .parent .test{
+//   background-color: red;
+// }
+
+.parent {
+  .test {
+    background-color: red;
+    span {
+      background: yellow;
+    }
+  }
+  .test2 {
+    background-color: rgb(0, 255, 200);
+  }
+
+  .svg-parent {
+    svg {
+      width: 50px;
+      color: rgb(0, 4, 255);
+      background: linear-gradient(red, yellow);
+    }
+  }
+  .icon-tabler-cookie {
+    color: red;
+  }
+}
