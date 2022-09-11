@@ -56,6 +56,7 @@ const About = () => {
                 </label>
                 <button onClick={() => handleSubmit()}>Submit</button>
             </div>
+            
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>{user?.name}</Card.Title>
