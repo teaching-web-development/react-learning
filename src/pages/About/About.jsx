@@ -10,16 +10,29 @@ const About = () => {
 
 
     const [getFromData, setFromData] = useState({});
-
+    const [formErr, setFormErr] = useState({
+        name: false,
+        desc: false,
+        roll: false
+    });
 
     const getData = (e) => {
         // console.log(e);
-        setFromData({ ...getFromData, [e.target.name]: e.target.value.trim() })
+        // 1 , 2, 3, 4
+        setFromData({ ...getFromData, [e.target.name]: e.target.value.trim() });
+        getFromData.name && setFormErr({ name: false });
     }
 
     const handleSubmit = () => {
         console.log(getFromData);
         // alert('Test')
+        setUser(getFromData);
+        if (!getFromData.name) {
+            setFormErr({ name: true })
+        } else {
+            setFormErr({ name: false })
+        }
+
     }
 
     return (
@@ -29,6 +42,7 @@ const About = () => {
                 <label htmlFor="name" className='d-flex flex-column'>
                     Name:
                     <input id="name" name="name" type="text" placeholder='Enter name' onChange={(e) => getData(e)} />
+                    {formErr.name && <span className='text-danger'>Name is required</span>}
                 </label>
 
                 <label htmlFor="name" className='d-flex flex-column'>
@@ -38,7 +52,7 @@ const About = () => {
 
                 <label htmlFor="name" className='d-flex flex-column'>
                     Roll:
-                    <input id="roll" name="roll" type="text" placeholder='Enter roll' onChange={(e) => getData(e)} />
+                    <input id="roll" name="roll" type="number" placeholder='Enter roll' onChange={(e) => getData(e)} />
                 </label>
                 <button onClick={() => handleSubmit()}>Submit</button>
             </div>
