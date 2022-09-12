@@ -1,4 +1,5 @@
 import React from 'react';
+import { CardPass } from '../../App';
 import { addFunction, nameEx } from '../Home/Home';
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
     return (
         <div>
             <h1>About {nameEx}</h1>
+            <CardPass test="About" />
         </div>
     );
 };
