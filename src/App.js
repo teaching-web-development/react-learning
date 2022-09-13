@@ -5,6 +5,7 @@ import MainNav from './components/MainNav/MainNav';
 import NotFound from './components/NotFound/NotFound';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
+import Test from './pages/Test/Test';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/test" element={<Test />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

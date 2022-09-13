@@ -14,7 +14,7 @@ const MainNav = () => {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                isActive ? 'text-danger' : ''
+                                isActive ? 'nav-active' : ''
                             }
                         >
                             Home
@@ -22,18 +22,18 @@ const MainNav = () => {
                         <NavLink
                             to="/about"
                             className={({ isActive }) =>
-                                isActive ? 'text-danger' : ''
+                                isActive ? 'nav-active' : ''
                             }
                         >
                             About
                         </NavLink>
                         <NavLink
-                            to="/blog"
+                            to="/test"
                             className={({ isActive }) =>
-                                isActive ? 'text-danger' : ''
+                                isActive ? 'nav-active' : ''
                             }
                         >
-                            Blog
+                            Test
                         </NavLink>
                     </Nav>
                 </Navbar.Collapse>
