@@ -43,6 +43,14 @@ const MainNav = () => {
                         >
                             Test Query
                         </NavLink>
+                        <NavLink
+                            to="/login"
+                            className={({ isActive }) =>
+                                isActive ? 'nav-active' : ''
+                            }
+                        >
+                            Login
+                        </NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
